@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdoHemuppgift")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f11c45a34048648b8fc65bae28db0197e6632cd9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e5ca14544d24b97d8082e9c60dc30d979659b18")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdoHemuppgift")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdoHemuppgift")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

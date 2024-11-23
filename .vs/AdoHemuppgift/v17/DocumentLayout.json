@@ -123,15 +123,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AdoHemuppgift",
+              "Title": "AdoHemuppgift.csproj",
               "DocumentMoniker": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift.csproj",
               "RelativeDocumentMoniker": "AdoHemuppgift\\AdoHemuppgift.csproj",
               "ToolTip": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift.csproj",
               "RelativeToolTip": "AdoHemuppgift\\AdoHemuppgift.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-23T15:57:16.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T15:57:16.452Z"
             },
             {
               "$type": "Document",
@@ -141,7 +140,7 @@
               "RelativeDocumentMoniker": "AdoHemuppgift\\DatabaseHandler.cs",
               "ToolTip": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\DatabaseHandler.cs",
               "RelativeToolTip": "AdoHemuppgift\\DatabaseHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T15:58:00.317Z",
               "EditorCaption": ""
@@ -154,7 +153,7 @@
               "RelativeDocumentMoniker": "AdoHemuppgift\\ApplicationUI.cs",
               "ToolTip": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\ApplicationUI.cs",
               "RelativeToolTip": "AdoHemuppgift\\ApplicationUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T15:46:17.937Z",
               "EditorCaption": ""
@@ -169,8 +168,7 @@
               "RelativeToolTip": "AdoHemuppgift\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T15:34:59.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T15:34:59.986Z"
             }
           ]
         }

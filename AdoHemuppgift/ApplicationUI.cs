@@ -34,8 +34,11 @@ namespace AdoHemuppgift
                 switch (choice)
                 {
                     case 1:
-                        int choosenActorId = ChooseActor();
-                        Console.WriteLine("bajs");
+                        string choosenActorId = ChooseActor().ToString();
+                        var actorFilms = DbHandler.GetAllFilmsFromActor(choosenActorId);
+                        Console.WriteLine("Here are all the films for the actor;\n");
+                        PrintList(actorFilms);
+                        PressEnterToContinue();
                         break;
                     case 2:
                         applicationRun = false;
@@ -50,9 +53,10 @@ namespace AdoHemuppgift
         public int ChooseActor()
         {
             Console.Clear();
-            Console.WriteLine("Choose one of the Actors in the list;\n");
+            Console.WriteLine("Choose one ID of the actors in the list;\n");
             ListAllActors();
             int choosenActorID = int.Parse(Console.ReadLine());
+            Console.Clear();
             return choosenActorID;
         }
         public void ListAllActors()
@@ -63,6 +67,20 @@ namespace AdoHemuppgift
             {
                 Console.WriteLine(actor);
             }
+        }
+        public void PrintList(List<string> list)
+        {
+            foreach(var item in list)
+            {
+                Console.WriteLine(item);
+            }  
+        }
+        public void PressEnterToContinue()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Press Enter To Continue..");
+            Console.ReadLine();
+            Console.Clear ();
         }
     }
 }
