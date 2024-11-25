@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,51 +15,104 @@ namespace AdoHemuppgift
 {
     internal class DatabaseHandler
     {
-        public SqlConnection DbConnection { get; set; }
-        public DatabaseHandler(SqlConnection dbConnecttion)
+        public string ConnectionString { get; set; }
+        public DatabaseHandler(string connectionString)
         {
-            this.DbConnection = dbConnecttion;
+            this.ConnectionString = connectionString;
         }
-        public List<string> GetAllFilmsFromActor(string actorId)
+        public List<string> GetAllFilmsFromActorByName(string firstname, string lastname)
         {
+
             List<string> films = new List<string>();
 
-            var getFilmFromActorCommand = new SqlCommand($"select title from film inner join film_actor as fa on fa.film_id = film.film_id inner join actor as a on a.actor_id = fa.actor_id where a.actor_id = {actorId}", DbConnection);
-            DbConnection.Open();
-            var actorFilms = getFilmFromActorCommand.ExecuteReader();
-            if (actorFilms.HasRows)
+            // Använder using här istället för "Close()" då det verkar vara best practise när man jobbar med Idispoable objekt
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
-                while (actorFilms.Read())
-                {
-                    films.Add($"{actorFilms.GetString(0)}");
-                }   
-            }
-            DbConnection.Close();
-            return films;
-        }
-        public List<string> GetAllActors()
-        {
-                List<string> allActorsList = new List<string>();
 
-                // valde att hämta allt i actortabellen så att metoden kan användas i flera syften 
-
-                var getActorsCommand = new SqlCommand("select * from actor", DbConnection);
-                DbConnection.Open();
-                var allActors = getActorsCommand.ExecuteReader();
-                if (allActors.HasRows)
+                using (SqlCommand getFilmFromActorCommand = new SqlCommand($"select title from film inner join film_actor as fa on fa.film_id = film.film_id inner join actor as a on a.actor_id = fa.actor_id where a.first_name = '{firstname}' and a.last_name = '{lastname}'", connection))
                 {
-                    while (allActors.Read())
+                    connection.Open();
+                    var actorFilms = getFilmFromActorCommand.ExecuteReader();
+                    if (actorFilms.HasRows)
                     {
-                        allActorsList.Add($"{allActors.GetInt32(0)}. {allActors.GetString(1)} {allActors.GetString(2)}");
+                        while (actorFilms.Read())
+                        {
+                            films.Add($"{actorFilms.GetString(0)}");
+                        }
+                    }
+
+                    return films;
+                }
+            }
+        }
+
+        public List<string> GetAllFilmsFromActorByID(int id)
+        {
+
+            List<string> films = new List<string>();
+
+            // Använder using här istället för "Close()" då det verkar vara best practise när man jobbar med Idispoable objekt
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand getFilmFromActorCommand = new SqlCommand($"select title from film inner join film_actor as fa on fa.film_id = film.film_id inner join actor as a on a.actor_id = fa.actor_id where a.actor_id = {id}", connection))
+                {
+                    connection.Open();
+                    var actorFilms = getFilmFromActorCommand.ExecuteReader();
+                    if (actorFilms.HasRows)
+                    {
+                        while (actorFilms.Read())
+                        {
+                            films.Add($"{actorFilms.GetString(0)}");
+                        }
+                    }
+
+                    return films;
+                }
+            }
+        }
+        public List<string> GetActorsID(string firstname, string lastname)
+        {
+            List<string> Actors = new List<string>();
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand getActorAndIdCommand = new SqlCommand($"select actor_id, first_name, last_name from actor where first_name = '{firstname}' and last_name = '{lastname}'", connection))
+                {
+                    connection.Open();
+                    var ActorsAndID = getActorAndIdCommand.ExecuteReader();
+                    if (ActorsAndID.HasRows)
+                    {
+                        while (ActorsAndID.Read())
+                        {
+                            Actors.Add($"{ActorsAndID.GetInt32(0)}. {ActorsAndID.GetString(1)} {ActorsAndID.GetString(2)}");
+
+                        }
                     }
                 }
-
-                DbConnection.Close();
-
-                return allActorsList;
-
             }
-
+            return Actors;
         }
-    }
+        public int CheckIfActorExist(string firstname, string lastname)
+        {
+            int count = 0;
 
+            // Använder using här istället för "Close()" då det verkar vara best practise när man jobbar med Idispoable objekt
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand getActorCommand = new SqlCommand($"select count (*) from actor where first_name = '{firstname}' and last_name = '{lastname}'", connection))
+                {
+                    connection.Open();
+                    count = (int)getActorCommand.ExecuteScalar();
+
+                    return count;
+
+                }
+            }
+        }
+
+    }
+}

@@ -53,3 +53,4 @@ C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\obj\Debug\net8.0\refint
 C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\obj\Debug\net8.0\AdoHemuppgift.pdb
 C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\obj\Debug\net8.0\AdoHemuppgift.genruntimeconfig.cache
 C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\obj\Debug\net8.0\ref\AdoHemuppgift.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\obj\Debug\net8.0\AdoHemuppgift.sourcelink.json
