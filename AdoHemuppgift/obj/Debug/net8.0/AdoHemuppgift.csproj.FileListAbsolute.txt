@@ -54,3 +54,16 @@ C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\obj\Debug\net8.0\AdoHem
 C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\obj\Debug\net8.0\AdoHemuppgift.genruntimeconfig.cache
 C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\obj\Debug\net8.0\ref\AdoHemuppgift.dll
 C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\obj\Debug\net8.0\AdoHemuppgift.sourcelink.json
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Oscar\AdoHemuppgift\AdoHemuppgift\AdoHemuppgift\bin\Debug\net8.0\AppSettings.json

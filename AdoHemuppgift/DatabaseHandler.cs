@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Identity.Client;
+
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -15,10 +17,10 @@ namespace AdoHemuppgift
 {
     internal class DatabaseHandler
     {
-        public string ConnectionString { get; set; }
-        public DatabaseHandler(string connectionString)
+        public string Connection { get; set; }
+        public DatabaseHandler(string connection)
         {
-            this.ConnectionString = connectionString;
+            this.Connection = connection;
         }
         public List<string> GetAllFilmsFromActorByName(string firstname, string lastname)
         {
@@ -27,7 +29,7 @@ namespace AdoHemuppgift
 
             // Använder using här istället för "Close()" då det verkar vara best practise när man jobbar med Idispoable objekt
 
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            using (SqlConnection connection = new SqlConnection(Connection))
             {
 
                 using (SqlCommand getFilmFromActorCommand = new SqlCommand($"select title from film inner join film_actor as fa on fa.film_id = film.film_id inner join actor as a on a.actor_id = fa.actor_id where a.first_name = '{firstname}' and a.last_name = '{lastname}'", connection))
@@ -54,7 +56,7 @@ namespace AdoHemuppgift
 
             // Använder using här istället för "Close()" då det verkar vara best practise när man jobbar med Idispoable objekt
 
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            using (SqlConnection connection = new SqlConnection(Connection))
             {
 
                 using (SqlCommand getFilmFromActorCommand = new SqlCommand($"select title from film inner join film_actor as fa on fa.film_id = film.film_id inner join actor as a on a.actor_id = fa.actor_id where a.actor_id = {id}", connection))
@@ -76,7 +78,7 @@ namespace AdoHemuppgift
         public List<string> GetActorsID(string firstname, string lastname)
         {
             List<string> Actors = new List<string>();
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            using (SqlConnection connection = new SqlConnection(Connection))
             {
 
                 using (SqlCommand getActorAndIdCommand = new SqlCommand($"select actor_id, first_name, last_name from actor where first_name = '{firstname}' and last_name = '{lastname}'", connection))
@@ -100,7 +102,7 @@ namespace AdoHemuppgift
             int count = 0;
 
             // Använder using här istället för "Close()" då det verkar vara best practise när man jobbar med Idispoable objekt
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            using (SqlConnection connection = new SqlConnection(Connection))
             {
 
                 using (SqlCommand getActorCommand = new SqlCommand($"select count (*) from actor where first_name = '{firstname}' and last_name = '{lastname}'", connection))

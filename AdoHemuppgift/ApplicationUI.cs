@@ -85,8 +85,11 @@ namespace AdoHemuppgift
                 string actorName = Console.ReadLine();
                 Console.Clear();
 
-                string[] fullNameAndReturnCode = new string[3];
+                
                 string[] firstAndLastname = actorName.Split(' ');
+
+                // makes the length of the array one index larger to hold the error code if there is any
+                Array.Resize(ref firstAndLastname, 3);
 
                 if (firstAndLastname.Length >= 2)
                 {
@@ -105,10 +108,9 @@ namespace AdoHemuppgift
                     }
                     else if (actorExist > 1)
                     {
-                        fullNameAndReturnCode[0] = firstAndLastname[0];
-                        fullNameAndReturnCode[1] = firstAndLastname[1];
-                        fullNameAndReturnCode[2] = "MultipleActors";
-                        return fullNameAndReturnCode;
+                        
+                        firstAndLastname[2] = "MultipleActors";
+                        return firstAndLastname;
                     }
 
                 }

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9494149-CAC2-49D6-A657-BB2E1A95BD4D}|AdoHemuppgift\\AdoHemuppgift.csproj|c:\\users\\oscar\\adohemuppgift\\adohemuppgift\\adohemuppgift\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9494149-CAC2-49D6-A657-BB2E1A95BD4D}|AdoHemuppgift\\AdoHemuppgift.csproj|solutionrelative:adohemuppgift\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E9494149-CAC2-49D6-A657-BB2E1A95BD4D}|AdoHemuppgift\\AdoHemuppgift.csproj|c:\\users\\oscar\\adohemuppgift\\adohemuppgift\\adohemuppgift\\databasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9494149-CAC2-49D6-A657-BB2E1A95BD4D}|AdoHemuppgift\\AdoHemuppgift.csproj|solutionrelative:adohemuppgift\\databasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9494149-CAC2-49D6-A657-BB2E1A95BD4D}|AdoHemuppgift\\AdoHemuppgift.csproj|c:\\users\\oscar\\adohemuppgift\\adohemuppgift\\adohemuppgift\\applicationui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9494149-CAC2-49D6-A657-BB2E1A95BD4D}|AdoHemuppgift\\AdoHemuppgift.csproj|solutionrelative:adohemuppgift\\applicationui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9494149-CAC2-49D6-A657-BB2E1A95BD4D}|AdoHemuppgift\\AdoHemuppgift.csproj|c:\\users\\oscar\\adohemuppgift\\adohemuppgift\\adohemuppgift\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9494149-CAC2-49D6-A657-BB2E1A95BD4D}|AdoHemuppgift\\AdoHemuppgift.csproj|solutionrelative:adohemuppgift\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9494149-CAC2-49D6-A657-BB2E1A95BD4D}|AdoHemuppgift\\AdoHemuppgift.csproj|c:\\users\\oscar\\adohemuppgift\\adohemuppgift\\adohemuppgift\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E9494149-CAC2-49D6-A657-BB2E1A95BD4D}|AdoHemuppgift\\AdoHemuppgift.csproj|solutionrelative:adohemuppgift\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9494149-CAC2-49D6-A657-BB2E1A95BD4D}|AdoHemuppgift\\AdoHemuppgift.csproj|c:\\users\\oscar\\adohemuppgift\\adohemuppgift\\adohemuppgift\\adohemuppgift.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 26,
+          "SelectedChildIndex": 25,
           "Children": [
             {
               "$type": "Bookmark",
@@ -123,6 +127,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "AppSettings.json",
+              "DocumentMoniker": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\AppSettings.json",
+              "RelativeDocumentMoniker": "AdoHemuppgift\\AppSettings.json",
+              "ToolTip": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\AppSettings.json",
+              "RelativeToolTip": "AdoHemuppgift\\AppSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-25T15:27:27.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AdoHemuppgift.csproj",
               "DocumentMoniker": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift.csproj",
               "RelativeDocumentMoniker": "AdoHemuppgift\\AdoHemuppgift.csproj",
@@ -130,43 +147,44 @@
               "RelativeToolTip": "AdoHemuppgift\\AdoHemuppgift.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-23T15:57:16.452Z"
+              "WhenOpened": "2024-11-23T15:57:16.452Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DatabaseHandler.cs",
               "DocumentMoniker": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\DatabaseHandler.cs",
               "RelativeDocumentMoniker": "AdoHemuppgift\\DatabaseHandler.cs",
               "ToolTip": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\DatabaseHandler.cs",
               "RelativeToolTip": "AdoHemuppgift\\DatabaseHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAGgAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T15:58:00.317Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ApplicationUI.cs",
               "DocumentMoniker": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\ApplicationUI.cs",
               "RelativeDocumentMoniker": "AdoHemuppgift\\ApplicationUI.cs",
               "ToolTip": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\ApplicationUI.cs",
               "RelativeToolTip": "AdoHemuppgift\\ApplicationUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowFoAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T15:46:17.937Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\Program.cs",
               "RelativeDocumentMoniker": "AdoHemuppgift\\Program.cs",
               "ToolTip": "C:\\Users\\Oscar\\AdoHemuppgift\\AdoHemuppgift\\AdoHemuppgift\\Program.cs",
               "RelativeToolTip": "AdoHemuppgift\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T15:34:59.986Z",
               "EditorCaption": ""
