@@ -9,9 +9,10 @@ namespace AdoHemuppgift
         {
 
             // Build configuration from appsettings.json
+
             var configuration = new ConfigurationBuilder()
-                .SetBasePath(AppContext.BaseDirectory) // Set the base path
-                .AddJsonFile("appsettings.json")      // Add the JSON file
+                .SetBasePath(AppContext.BaseDirectory) 
+                .AddJsonFile("appsettings.json")      
                 .Build();
 
             string connectionString = configuration.GetConnectionString("DefaultConnection");
