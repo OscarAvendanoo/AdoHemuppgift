@@ -62,8 +62,11 @@ namespace AdoHemuppgift
 
             using (SqlConnection connection = new SqlConnection(Connection))
             {
+                string quary = $"select title from film " +
+                               $"inner join film_actor as fa on fa.film_id = film.film_id " +
+                               $"inner join actor as a on a.actor_id = fa.actor_id where a.actor_id = {id}";
 
-                using (SqlCommand getFilmFromActorCommand = new SqlCommand($"select title from film inner join film_actor as fa on fa.film_id = film.film_id inner join actor as a on a.actor_id = fa.actor_id where a.actor_id = {id}", connection))
+                using (SqlCommand getFilmFromActorCommand = new SqlCommand(quary, connection))
                 {
                     connection.Open();
                     var actorFilms = getFilmFromActorCommand.ExecuteReader();
@@ -106,12 +109,14 @@ namespace AdoHemuppgift
         public int CheckIfActorExist(string firstname, string lastname)
         {
             int count = 0;
+            string quary = $"select count (*) from actor " +
+                           $"where first_name = '{firstname}' and last_name = '{lastname}'";
 
             // Använder using här istället för "Close()" då det verkar vara best practise när man jobbar med Idispoable objekt
             using (SqlConnection connection = new SqlConnection(Connection))
             {
 
-                using (SqlCommand getActorCommand = new SqlCommand($"select count (*) from actor where first_name = '{firstname}' and last_name = '{lastname}'", connection))
+                using (SqlCommand getActorCommand = new SqlCommand(quary, connection))
                 {
                     connection.Open();
                     count = (int)getActorCommand.ExecuteScalar();
